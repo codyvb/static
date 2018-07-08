@@ -66,23 +66,16 @@
 		init();
 		animate();
 
-		function autoStart () {
-        document.removeEventListener('touchstart', autoStart)
-        document.getElementById('video-to-autoplay').play()
-        }
-        document.addEventListener('touchstart', autoStart, false)
-
 		function init() {
 
 			camera = new THREE.PerspectiveCamera(55, 1080/ 720, 20, 3000);
 			camera.position.z = 1000;
 			scene = new THREE.Scene();
 
-
 			//Load Video
 			video = document.createElement( 'video' );
 			video.loop = true;
-			video.src = 'http://codybrown.name/wp-content/uploads/2018/07/texture.mp4';
+			video.src = 'res/fits.mp4';
 			video.setAttribute('crossorigin', 'anonymous');
 			video.load();
 			video.play();
