@@ -29,7 +29,6 @@
 </head>
 <body>
 
-	<div id='info'>BadTV Shader for Three.js by @felixturner. Click to randomize.</div>
 	<div id='container'></div>
 
 	<script src='lib/three.min.js'></script>
@@ -115,12 +114,6 @@
 			scene.add( plane );
 			plane.z = 0;
 			plane.scale.x = plane.scale.y = 1.45;
-
-			//add stats
-			stats = new Stats();
-			stats.domElement.style.position = 'absolute';
-			stats.domElement.style.top = '0px';
-			container.appendChild( stats.domElement );
 
 			//init renderer
 			renderer = new THREE.WebGLRenderer();
